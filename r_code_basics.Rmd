@@ -11,7 +11,7 @@ output:
     code_folding: "hide"
 ---
 
-Above: "YAML header"
+Above: "YAML header" (flanked by lines with just three dashes ---)
 
 ```{css}
 h1 {background: brown;color: white;padding-left: 7px;}
@@ -32,7 +32,7 @@ code {color: chocolate;}
 
 There are two types of R scripts:  
 
-* Standard R scripts (see `basics.R`)  
+* Standard R scripts (see `r_code_basics.R`)  
 * rmarkdown (`.Rmd`) scripts  
 * Please see the `rmarkdown.Rmd` or `rmarkdown.nb.html` files for details on rmarkdown scripts  
 
@@ -247,7 +247,7 @@ v3
 names(v3)
 ```
 
-In R it is very easy to manipulate all items in a vector with simple code:  
+_**In R it is very easy to manipulate all items in a vector with simple code:**_  
 ```{r}
 v3 * 10
 ```
