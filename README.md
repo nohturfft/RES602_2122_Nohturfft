@@ -12,7 +12,7 @@ St. George's University of London
 * Saving data frames as a text file  
 * Plotting graphs  
 
-### Accessing R/Rstudio Server  
+## Accessing R/Rstudio Server  
 
 To access RStudio Server online, please go to [https://stats3.sgul.ac.uk/rstudio/](https://stats3.sgul.ac.uk/rstudio/).  
 
