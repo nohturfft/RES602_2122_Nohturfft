@@ -72,7 +72,7 @@ rm(op, x, y, z, nrz, ncz, jet.colors, nbcol, color, zfacet, facetcol)
 
 ### Interactive graphic  
 ```{r plotly graphic, warning=FALSE, message=FALSE}
-# if (!require("plotly")) install.packages("plotly")
+if (!require("plotly")) install.packages("plotly")
 library(plotly)
 
 plot_ly(economics, x = ~date, color = I("black")) %>%
