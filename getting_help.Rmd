@@ -10,7 +10,7 @@ output:
     code_folding: "show"
 ---
 
-<style>
+```{css}
 h1 {background: brown;color: white;padding-left: 7px; font-size:large}
 h2 {background: grey;
 color: white;
@@ -20,7 +20,8 @@ padding-bottom:5px;
 font-size:medium}
 h3 {color: brown;font-size:medium}
 code {color: chocolate;}
-</style>
+```
+
 
 
 ## The Programmer's Categorical Imperative  
