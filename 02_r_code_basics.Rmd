@@ -19,7 +19,7 @@ output:
 * Variables  
 
 
-```{css}
+```{css echo=FALSE}
 h1 {background: brown;color: white;padding-left: 7px;}
 h2 {background: grey;color: white;padding-left: 7px;}
 h3 {color: brown;}
