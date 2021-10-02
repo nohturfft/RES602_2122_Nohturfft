@@ -1,5 +1,6 @@
-# RES602 Experimental Design and Data Analysis R workshops 2021
-## 01-October-2021
+# RES602 Experimental Design and Data Analysis
+## Introduction to R
+## Date: 01-October-2021
 Axel Nohturfft  
 St. George's University of London  
 
