@@ -71,6 +71,8 @@ paste(h, collapse="")
 ### Subsetting vectors using names  
 You can also refer to vector items by name, if defined ...
 ```{r}
+v3 <- 1:12
+names(v3) <- toupper(month.abb)
 v3
 ```
 
@@ -111,7 +113,10 @@ v4[x]
 ## Subsetting data frames  
 
 ```{r}
-print(df1)
+df1 <- data.frame(Name=c("Jane", "Jack", "Jaim"),
+                  Age=c(5, 12, 30),
+                  Female=c(TRUE, FALSE, FALSE))
+df1
 ```
 
 
@@ -171,7 +176,7 @@ df1[c(FALSE, TRUE, TRUE), c(TRUE, FALSE, TRUE)]
 ```
 
 
-### Column names/headers
+### Extracting a single column from a data frame by name  
 
 For data frames the `names()` command refers to column headers:
 ```{r}
@@ -190,15 +195,16 @@ df1$Nom
 class(df1$Nom)
 ```
 
+
+## Subsetting data frames using row and column names  
+
 Data frames (and matrices) can have row names as well:
 ```{r}
 row.names(df1) <- paste0("Row", seq_len(nrow(df1)))
 df1
 ```
 
-## Subsetting data frames using row and column names  
-
-We can use row names and column names to subset data frames:  
+We can use both row names and column names to subset data frames:  
 *(NOTE that text always needs to be defined with quotation marks)*  
 
 Select 2 columns (all rows):
