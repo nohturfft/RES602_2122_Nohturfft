@@ -1,6 +1,6 @@
 ---
-title: "R Code Basics"
-subtitle: "Experimental Design and Data Analysis (01-Oct-21)"
+title: "Experimental Design and Data Analysis 2021/22"
+subtitle: "(02) R Code Basics"
 author: "Axel Nohturfft"
 date: "`r Sys.Date()`"
 output: 
@@ -8,7 +8,7 @@ output:
     toc: TRUE
     toc_float: TRUE
     toc_depth: 3
-    code_folding: "hide"
+    code_folding: "show"
 ---
 
 ## Topics covered in this script  
@@ -26,6 +26,10 @@ h3 {color: brown;}
 code {color: chocolate;}
 ```
 
+```{r}
+# Clear variables in memory
+rm(list = ls(all=TRUE))
+```
 
 
 ## Scripts  
@@ -142,12 +146,12 @@ min(c(3, 4, 10))
 Usually data are stored in named VARIABLES.  
 
 * Variables are defined with the '<-' assignment operator  
-* Variable names can be very long  
+* Variable names can be (almost) any length  
 * Variables CANNOT contain spaces  
 * Variables CANNOT contain dashes/hyphens    
-* Variables CANNOT start with a number (but numbers can appear elsewhere)  
+* Variables CANNOT start with a number (but numbers can appear elsewhere in the variable name)  
 
-# Two scalars:
+### Two scalars:
 ```{r}
 my.first.variable <- "Hello world!"
 my.second.variable <- 2019
@@ -155,15 +159,22 @@ my.second.variable <- 2019
 
 ***Note that variables are listed in the 'Environment' tab in the top right RStudio panel.***  
 
-Use the 'print()' or 'cat()' function to display the contents of a variable.  
+Use the `print()` or `cat()` function to display the contents of a variable.  
 Output from `print()` is preceded by row numbers in square brackets; with `cat()` the row numbers are not printed:
+
+Using `print()`:  
 ```{r}
 print(my.first.variable)
+print(my.second.variable)
+```
+
+Using `cat()`:
+```{r}
 cat(my.first.variable)
 ```
 
+
 ```{r}
-print(my.second.variable)
 cat(my.second.variable)
 ```
 
@@ -239,17 +250,19 @@ plot(sqrt(t) * cos(t), sqrt(t) * sin(t), type="l", axes=FALSE, col="blue")
 
 
 ### Vector items can have names  
-The `names()` function is used both to define and to return the names of a data object.
+The `names()` function is used both to define and to return the names of the items of a data object.
 ```{r}
 v3
 month.abb
 ```
 
+Define names:  
 ```{r}
 names(v3) <- toupper(month.abb)
 v3
 ```
 
+Return names:
 ```{r}
 names(v3)
 ```
