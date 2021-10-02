@@ -1,5 +1,6 @@
 ---
-title: "Getting help"
+title: "Experimental Design and Data Analysis 2021/22"
+subtitle: "(06) Getting help"
 author: "Axel Nohturfft"
 date: "`r Sys.Date()`"
 output: 
@@ -81,7 +82,8 @@ Mostly looking for search hits on the stackoverflow web site:
 * [https://stackoverflow.com/documentation/r](https://stackoverflow.com/documentation/r)
 * [https://stackoverflow.com/documentation/r/topic](https://stackoverflow.com/documentation/r/topic)
 
-## (8) To stay up-to-date on R consider subscribing to r-bloggers:
+## (8) To stay up-to-date on R consider subscribing to rweekly and/or r-bloggers:
 
+* https://rweekly.org/  
 * https://www.r-bloggers.com/  
-* https://feeds.feedburner.com/RBloggers  
+
